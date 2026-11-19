@@ -1,1 +1,160 @@
-<h1>Hello World Wide Web!</h1>
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <title>Assignment3 Web Design</title>
+  <meta charset="utf-8">
+  
+  <style>
+    body {
+      background-color: #F5EFE6; 
+      font-family: Inter, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    img {
+      height: auto;
+    }
+    .container {
+      width: 1200px;
+      margin: 0 auto;
+    }
+    nav {
+      background-color: #D9D9D9;
+      height: 50px;
+      line-height: 50px;
+      padding: 15px 40px;
+      font-size: 20px;
+      text-align: right;
+      top: 0;
+      position: sticky;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline;
+      margin-left: 45px;
+    }
+    .hero-section {
+      display: grid;
+      grid-template-columns: 30% 65%;
+      gap: 60px;
+      padding: 60px 60px 20px 60px;
+      align-items: center;
+    }
+    .hero-intro {
+      text-align: right;
+    }
+    
+    .welcome-text {
+      font-size: 30px;
+      margin: 0 0 8px 0;
+    }
+    
+    h1 {
+      background-color: #B3D9F2;
+      display: inline-block;
+      font-size: 45px;
+      margin: 0 0 12px 0;
+      padding: 6px 3px 6px 3px;
+      letter-spacing: 1px;
+    }
+    
+    .intro {
+      font-size: 20px;
+      margin-top: -2px;
+      line-height: 1.5;
+    }
+    .my-work-title {
+      font-size: 25px;
+      text-align: left;
+      width: 515px;
+      margin: 55px 0 0 auto;
+    }
+    
+    .folder-grid {
+      display: grid;
+      grid-template-columns: 150px 150px 150px;
+      gap: 45px;
+      justify-content: end;
+      text-align: center; 
+    }
+    
+    .folder-item {
+      margin: 0 0 0 0;
+      font-size: 15px;
+    }
+    
+    .folder-item p {
+      margin: 0 0 0 0;
+    }
+    
+    .logo-bar-wrapper {
+      text-align: center;
+      padding: 25px 0 45px 0;
+    }
+    
+    .grey-divider {
+      background-color: #D9D9D9;
+      height: 45px;
+      width: 100%;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#home"><strong>home</strong></a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#about">about</a></li>
+        </ul>
+      </nav>
+      
+      <header id="home" class="hero-section">
+        <div>
+          <img src="MySelfie.png" width="390" height="440" alt="MySelfie">
+        </div>
+        <div>
+          <div class="hero-intro">
+            <p class="welcome-text">welcome to</p>
+            <h1>CHLOE LEE'S PORTFOLIO</h1>
+            <p class="intro">| SOCIAL MEDIA COORDINATOR | GRAPHIC DESIGNER |<br>| PHOTOGRAPHER | VIDEOGRAPHER | MARKETING |</p>
+          </div>
+          <h2 id="projects" class="my-work-title">My Work</h2>
+          
+          <div class="folder-grid">
+            <div class="folder-item">
+              <a href="#graphic">
+              <img src="AppleFolder.png" width="140" alt="Graphic Folder">
+              <p>Graphics</p>
+              </a>
+            </div>
+            <div class="folder-item">
+              <a href="#photography">
+              <img src="AppleFolder.png" width="140" alt="Photography Folder">
+              <p>Photography</p>
+              </a>
+            </div>
+            <div class="folder-item">
+              <a href="#Videos">
+              <img src="AppleFolder.png" width="140" alt="Video Folder">
+              <p>Video</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <div class="logo-bar-wrapper">
+        <img src="Logos.png" width="380" alt="Logos">
+      </div>
+      <div class="grey-divider"></div>
+    </div>
+  </body>
+</html>
