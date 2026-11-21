@@ -30,20 +30,24 @@
     .container {
       width: 1200px;
       margin: 0 auto;
+      box-sizing: border-box;
     }
     nav {
       background-color: #D9D9D9;
-      height: 40px;
-      line-height: 40px;
+      height: 45px;
+      line-height: 45px;
       padding: 10px 40px;
       font-size: 17px;
-      text-align: right;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       top: 0;
       position: sticky;
     }
-
+  
     nav ul {
       list-style-type: none;
+      display: flex;
       margin: 0;
       padding: 0;
     }
@@ -52,6 +56,7 @@
       display: inline;
       margin-left: 45px;
     }
+    
     .hero-section {
       display: grid;
       grid-template-columns: 45% 55%;
@@ -191,12 +196,46 @@
       width: 400px;
       max-width: 100%;
     }
+    
+    .graphics-section {
+      padding: 60px 80px 70px 80px;
+    }
+    
+    .graphics-heading {
+      text-align: center;
+      font-size: 35px;
+      margin: 0 0 80px 0;
+    }
+    
+    .graphics-grid {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 50px;
+    }
+    
+
+    .graphic-pic img {
+      max-width: 100%;
+      max-height: 350px;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+      display: block;
+      margin: 0 auto;
+    }
+    
+    .graphic-caption {
+      font-size: 18px;
+      margin: 18px 0 50px 0;
+      text-align: center;
+    }
   </style>
   </head>
   <body>
     <div class="container">
       <nav>
         <ul>
+          <img src="AppleFolder.png" width="42" alt="Apple Folder">
           <li><a href="#home">home</a></li>
           <li><a href="#projects">projects</a></li>
           <li><a href="#about">about</a></li>
@@ -257,6 +296,29 @@
         <p>Email: <a href="mailto:chloeleehc@gmail.com">chloeleehc@gmail.com</a><br>Instagram: <a href="https://www.instagram.com/chloeleeee._" target="_blank">@chloeleeee._</a></p>
         </div>
         </div>
+      </section>
+    <div class="grey-divider"></div>
+      
+    <section id="graphic" class="graphics-section">
+      <h2 class="graphics-heading">GRAPHICS</h2>
+      <div class="graphics-grid">
+        <div class="graphics-card">
+          <a href="website-redesign.html">
+          <div class="graphic-pic">
+            <img src="DesktopMockup.png" alt="Website Redesign">
+            </div>
+          <p class="graphic-caption">Website Redesign</p>
+          </a>
+      </div>
+      <div class="graphic-card">
+        <a href="magazine-design.html">
+        <div class="graphic-pic">
+          <img src="MagazineMockup.png" alt="Magazine Design">
+          </div>
+        <p class="graphic-caption">Magazine Design</p>
+        </a>
+      </div>
+      </div>
       </section>
     <div class="grey-divider"></div>
     </div>
