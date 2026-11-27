@@ -44,6 +44,7 @@
       justify-content: space-between;
       top: 0;
       position: sticky;
+      z-index: 10;
     }
   
     nav ul {
@@ -58,11 +59,46 @@
       margin-left: 45px;
     }
     
-    .welcome-heading {
-      font-size: 65;
-      font-weight: 600;
+    .hero-section {
+      position: relative;
+      width: 100%;
+    }
+    
+    .hero-section img {
+      width: 100%;
+      display: block;
+    }
+    
+    .hero-overlay {
+      position: absolute;
+      top: 49%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
       text-align: center;
     }
+    
+    .welcome-text {
+      font-size: 30px;
+      font-weight: 500;
+      margin: 0 0 10px 0;
+      letter-spacing: 0.5px;
+    }
+    
+    .welcome-heading {
+      font-size: 70px;
+      font-weight: 600;
+      margin: 13px 0 15px 0;
+      letter-spacing: 1px;
+    }
+    
+    .welcome-roles {
+      font-size: 18px;
+      font-weight: 400;
+      margin: 0;
+      letter-spacing: 0.5px;
+    }
+    
     h1 {
       background-color: #B3D9F2;
       display: inline-block;
@@ -221,7 +257,10 @@
         <div>
           <img src="WelcomePage.png" width="1220" alt="Welcome Page">
         </div>
-        <div class="welcome-heading">CHLOE LEE'S PORTFOLIO
+        <div class="hero-overlay">
+          <p class="welcome-text">welcome to</p>
+          <div class="welcome-heading">CHLOE LEE'S PORTFOLIO</div>
+          <p class="welcome-roles">| SOCIAL MEDIA  | GRAPHIC DESIGN | PHOTOGRAPHY|</p>
         </div>
       </header>
       <div class="grey-divider"></div>
