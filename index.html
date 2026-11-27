@@ -4,8 +4,9 @@
   <title>Assignment3 Web Design</title>
   <meta charset="utf-8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <style>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
     body {
       background-color: #FDFBF9; 
       font-family: Inter, sans-serif;
@@ -110,35 +111,11 @@
     }
     
     h2 {
-      font-size: 35px;
+      font-size: 50px;
       font-weight: 600;    
       margin: 0 0 12px 0;
       padding: 6px 3px 6px 3px;
       letter-spacing: 1px;
-    }
-    
-    .intro {
-      font-size: 18px;
-      margin-top: -2px;
-      line-height: 1.5;
-    }
-    .my-work-title {
-      font-size: 25px;
-      text-align: left;
-      width: 540px;
-      margin: 55px -24px 30px auto;
-    }
-  
-    
-    .logo-bar-wrapper {
-      text-align: center;
-      margin-top: -50px;
-      padding: 0 0 0 0;
-    }
-    
-    .logo-bar-wrapper img {
-      display: block;
-      margin: 0 auto;
     }
 
     .grey-divider {
@@ -150,20 +127,31 @@
     .aboutme-section {
       padding: 60px 80px;
       display: grid;
-      grid-template-columns: 60% 40%;
-      gap: 20px;
-      align-items: start;
+      grid-template-columns: 40% 60%;
+      gap: 40px;
+      align-items: center;
+    }
+    
+    .aboutme-photo {
+      text-align: center;
+    }
+    
+    .aboutme-photo img {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
     }
     
     .aboutme-heading {
       color: #B22222;
       font-size: 50px;
+      font-weight: 600;
       margin: 0 0 20px 0;
     }
     
     .aboutme-text {
-      font-family: "Raleway", sans-serif;
-      font-weight: 450;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
       width: 100%;
       letter-spacing: 0.6px;
       font-size: 17px;
@@ -171,73 +159,15 @@
       margin: 0 0 20px 0;
     }
     
-    .contact-box {
-      margin-top: 200px;
-      text-align: right;
-
-    }
-    
-    .contact-heading {
-      color: #B22222;
-      font-size: 40px;
-      text-align: right;
-    }
-    
-    .contact-box p {
-      width: 100%;
-      letter-spacing: 0.6px;
-      font-size: 20px;
-      line-height: 1.6;
-      margin: 0 0 0 0;
-      text-align: right;
-
-    }
-    
-    .smiski-box {
-      width: 400px;
-      max-width: 100%;
-    }
-    
-    .graphics-section {
-      padding: 60px 80px 70px 80px;
-    }
-    
-    .graphics-heading {
+    .logo-bar {
+      padding: 0 0 50px 0;
+      margin-top: -10px;
       text-align: center;
-      font-size: 35px;
-      margin: 0 0 80px 0;
     }
     
-    .graphics-grid {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      gap: 50px;
-    }
-
-    .graphic-pic img {
-      max-width: 100%;
-      max-height: 350px;
-      object-fit: contain;
-      border-radius: 10px;
-      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+    .logo-bar img {
+      margin: -50px auto;
       display: block;
-      margin: 0 auto;
-    }
-    
-    .graphic-caption {
-      font-size: 18px;
-      margin: 18px 0 50px 0;
-      text-align: center;
-    }
-    
-    .photography-section {
-      padding: 60px 80px 70px 80px;
-    }
-    
-    .photography-heading {
-      text-align: center;
-      font-size: 35px;
-      margin: 0 0 80px 0;
     }
     
   </style>
@@ -266,46 +196,18 @@
       <div class="grey-divider"></div>
       
       <section id="about" class="aboutme-section">
+        <div class="aboutme-photo">
+          <img src="MySelfie.png" alt="Chloe Lee">
+        </div>
+        
         <div>
         <h2 class="aboutme-heading">ABOUT ME</h2>
-        
         <p class="aboutme-text">Hi, I am Chloe Lee, a Global Business and Digital Art (GBDA) student at the <a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a>. A marketing and social media coordinator, photographer, and Graphic Designer.<br> <br> I am currently the Social Media Coordinator of <a href="https://www.instagram.com/haebeatdancecrew?hvrq=MTg1MXYwMzQxamNlbQ==" target="_blank">Haebeat Dance Crew</a>, and Marketing Executive in <a href="https://www.instagram.com/uwaterloohksa?dmpr=b2hubmlqZ2JmejFx" target="_blank">University of Waterloo Hong Kong Student Association</a>.<br> <br> Moreover, I own a small (super small) craft business! In my free time, or whenever I feel stressed, I do beadings. It’s a relaxation tool for me to stay away from stressful works. I find myself really into beading months ago, so I decided to start selling my products.<br> <br>Fun fact: I love everything about apples, and I always sneak apple elements in my graphic design projects!</p>
         </div>
-         <div class="smiski-box">
-          <img src="Smiski.webp" width="400" alt="Smski">
-           
-      <div class="contact-box">
-        <h2 class="contact-heading">Connect With Me !</h2>
-        <p>Email: <a href="mailto:chloeleehc@gmail.com">chloeleehc@gmail.com</a><br>Instagram: <a href="https://www.instagram.com/chloeleeee._" target="_blank">@chloeleeee._</a></p>
-        </div>
-        </div>
-      </section>
+        </section>
+      <div class="logo-bar">
+        <img src="Logos.png" alt="Logos">
+      </div>
     <div class="grey-divider"></div>
-      
-    <section id="graphic" class="graphics-section">
-      <h2 class="graphics-heading">GRAPHICS</h2>
-      <div class="graphics-grid">
-        <div class="graphics-card">
-          <a href="website-redesign.html">
-          <div class="graphic-pic">
-            <img src="DesktopMockup.png" alt="Website Redesign">
-            </div>
-          <p class="graphic-caption">Website Redesign</p>
-          </a>
-      </div>
-      <div class="graphic-card">
-        <a href="magazine-design.html">
-        <div class="graphic-pic">
-          <img src="MagazineMockup.png" alt="Magazine Design">
-          </div>
-        <p class="graphic-caption">Magazine Design</p>
-        </a>
-      </div>
-      </div>
-      </section>
-    <div class="grey-divider"></div>
-        <section id="photography" class="photography-section">
-      <h2 class="photography-heading">PHOTOGRAPHY</h2>
-    </div>
   </body>
 </html>
